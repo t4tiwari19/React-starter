@@ -1,5 +1,6 @@
 import React from "react";
-import "../styles/RAF.style";
+import withStyles from "../../components/common/hoc/withStyles";
+import styles from "./RAF.style";
 const RAF = () => {
   return (
     <>
@@ -10,4 +11,5 @@ const RAF = () => {
   );
 };
 
-export default RAF;
+export default withStyles(RAF, styles);
+export { RAF as RAFVanilla };

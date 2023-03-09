@@ -1,12 +1,16 @@
 import React from "react";
-import RAF from "./views/RAF/container";
-import "./App.less";
+import { ThemeProvider } from "styled-components";
+import theme from "./styles/theme/index";
+import RAF from "./views/RAF/RAF.view";
+import AppWrapper from "./App.styles.js";
 
 const App = () => {
   return (
-    <main className="app-wrapper">
-      <RAF />
-    </main>
+    <ThemeProvider theme={theme}>
+      <AppWrapper>
+        <RAF />
+      </AppWrapper>
+    </ThemeProvider>
   );
 };
 export default App;
