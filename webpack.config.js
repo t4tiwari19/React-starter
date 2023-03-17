@@ -7,9 +7,12 @@ module.exports = {
   entry: "./src/index.js",
   resolve: {
     extensions: [".js", ".jsx"],
+    alias: {
+      "@app": path.resolve(__dirname, "src"),
+    },
   },
   output: {
-    filename: "bundle.js",
+    filename: "bundle.[contenthash].js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
     assetModuleFilename: "images/[hash][ext][query]",
@@ -17,6 +20,7 @@ module.exports = {
   plugins: [
     new HtmlWebPackPlugin({
       template: "./public/index.html",
+      hash: true,
     }),
     new MiniCssExtractPlugin(),
   ],

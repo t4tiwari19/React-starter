@@ -1,16 +1,13 @@
 import React from "react";
-import { ThemeProvider } from "styled-components";
-import theme from "./styles/theme/index";
 import RAF from "./views/RAF/RAF.view";
-import AppWrapper from "./App.styles.js";
+import GlobalStyleWrapper from "./App.style";
 
-const App = () => {
-  return (
-    <ThemeProvider theme={theme}>
-      <AppWrapper>
-        <RAF />
-      </AppWrapper>
-    </ThemeProvider>
-  );
-};
+const App = () => (
+  <GlobalStyleWrapper>
+    <div className="header mb20">Header</div>
+    <RAF />
+    <div className="header mt20">Footer</div>
+  </GlobalStyleWrapper>
+);
+
 export default App;
