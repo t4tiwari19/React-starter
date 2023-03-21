@@ -1,0 +1,51 @@
+{
+  "event_id": "7212591581229770830",
+  "data": {
+    "program_label": "refer-a-friend-staging",
+    "campaign_id": "7156986749295819346",
+    "links": {
+      "company_url": "https://www.yourcompany.com",
+      "terms_url": "https://referafriend.discover.com/zone/terms?journey.campaign_id=7156986749295819346",
+      "how_it_works_url": "https://www.yourcompany.com/howitworks"
+    },
+    "calls_to_action": {
+      "menu": { "message": "Lorem ipsum dolor sit amet" },
+      "account_page": { "message": "Lorem ipsum dolor sit amet" },
+      "product": { "message": "Lorem ipsum dolor sit amet" },
+      "confirmation": { "message": "Lorem ipsum dolor sit amet" }
+    },
+    "sharing": {
+      "email": {
+        "subject": "I thought you'd be interested in this",
+        "message": "I wanted to share one of my favorite brands Your Company. Because I referred you, you can get rewarded with $20."
+      },
+      "facebook": {
+        "title": "Get $20 Off",
+        "image": "https://origin.extole.io/type=creativeArchive:clientId=921518087:creativeArchiveId=7156986751421312297:version=2:coreAssetsVersion=183/images/generic-social.jpg",
+        "description": "Your Company is great! Use my link and we both get rewarded."
+      },
+      "twitter": { "message": "Your Company is great! Use my link and we both get rewarded." },
+      "sms": { "message": "I love Your Company! Use my link and we both get rewarded" }
+    },
+    "me": {
+      "email": "oprasad@discover.com",
+      "first_name": "Om",
+      "last_name": "Prasad",
+      "partner_user_id": "omprakash4193",
+      "profile_picture_url": null,
+      "shareable_link": "https://referafriend.discover.com/oprasad7",
+      "advocateCode": null,
+      "rewards": [],
+      "friends": [
+        {
+          "firstNameOrEmail": "annaparajugollapudy@discover.com",
+          "initials": "A",
+          "email": "annaparajugollapudy@discover.com",
+          "profilePictureUrl": null,
+          "status": "Emailed 2 hours ago"
+        }
+      ]
+    }
+  },
+  "campaign_id": "7156986749295819346"
+}
