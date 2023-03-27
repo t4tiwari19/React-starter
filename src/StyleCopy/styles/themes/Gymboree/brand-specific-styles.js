@@ -1,0 +1,260 @@
+/* eslint-disable sonarjs/no-duplicate-string */
+import colors from './colors';
+import orange from '../colors/orange';
+import gray from '../colors/gray';
+import blue from '../colors/blue';
+import green from '../colors/green';
+import spacing from '../TCP/spacing';
+import { FONT_SIZES, FONT_WEIGHTS } from '../typography.constants';
+import { mediaQuery } from '../TCP/mediaQuery';
+import colorPalette from './colorPalette';
+import fonts from './fonts';
+import TCPFonts from '../TCP/fonts';
+
+export default {
+  APPLE_PAY_BUTTON_BORDER_RADIUS: spacing.ELEM_SPACING.LRG,
+  BUTTON_HOVER_BORDER_BOTTOM_COLOR: colorPalette.primary.main,
+  BUTTON_CURVE_CSS: 'border-radius: 25.5px;',
+  BUTTON_NO_CURVE_MOBILE_CSS: `
+    border-radius: 25.5px;
+    @media ${mediaQuery.smallOnly} {
+      border-radius: 0;
+    }`,
+  BUTTON_SHADOW_PRIMARY_COLOR: orange['50'],
+  BUTTON_SHADOW_SECONDARY_COLOR: orange['800'],
+  BACK_TO_TOP_BORDER_COLOR: orange['800'],
+  CART_ITEM_TILE_IMAGE_BRAND_WIDTH: '60px',
+  CART_ITEM_TILE_IMAGE_BRAND_HEIGHT: '14px',
+  CTA_LINK_LIST_FONT_WEIGHT: `font-weight: ${FONT_WEIGHTS.bold}`,
+  PRODUCT_INFO_IMAGE_BRAND_HEIGHT: '15px',
+  PROMO_BADGE_BACKGROUND_COLOR: orange['900'],
+  PROMO_BADGE_BORDER_RADIUS: '12.5px',
+  SPINNER_COLOR: orange['800'],
+  OUTFIT_PRODUCT_OFFER_PRICE_COLOR: gray['900'],
+  BACKGROUND_HOVER_L2: orange['100'],
+  NAV_CATEGORY_HEADING: orange['50'],
+  STROKE_COLOR_BORDER_COLOR: blue['500'],
+  FOOTER_SOCIAL_ICONS_DESKTOP_WIDTH: '50px',
+  FOOTER_SOCIAL_ICONS_DESKTOP_HEIGHT: '50px',
+  FOOTER_SOCIAL_ICONS_MOBILE_WIDTH: '42px',
+  FOOTER_SOCIAL_ICONS_MOBILE_HEIGHT: '42px',
+  ORDER_HISTORY_BACKGROUND_COLOR: orange['100'],
+  JOIN_OUR_TEXT_ALERTS_FONT: 'Montserrat',
+  REFER_A_FRIEND_FONT: 'Montserrat',
+  REFER_A_FRIEND_COLOR: orange['800'],
+  THREE_BRANDS_ONE_PLACE: 'Montserrat,Arial, Helvetica, sans-serif',
+  BRAND_SPECIFIC_FONT: 'Montserrat,Arial, Helvetica, sans-serif',
+  EXTENDED_PREORDER_COLOR: green['500'],
+
+  MODULE_A: {
+    BANNER_SLIDE_MAX_HEIGHT: '506px',
+    BANNER_SLIDE_MAX_HEIGHT_FOR_MEDIUM: '296px',
+    CTA_LIST_COLOR: () => colors.BUTTON.WHITE,
+    CTA_LIST_FONT_WEIGHT: `font-weight: ${FONT_WEIGHTS.bold}`,
+  },
+  MODULE_D: {
+    IMAGE_CTA_COLOR: colors.BUTTON.WHITE,
+    IMAGE_CTA_LIST_FONT_WEIGHT: `font-weight: ${FONT_WEIGHTS.bold}`,
+  },
+  MODULE_N: {
+    PERCENTAGE_INLINE_PROMO_FONT_SIZE: FONT_SIZES.fs42,
+  },
+  PRODUCT_LISTING_BRAND_SPECIFIC_COLOR: orange[900],
+  MODULE_G: {
+    PRODUCT_TAB_LISTING_MARGIN_TOP: spacing.LAYOUT_SPACING.XS,
+    PROMO_CONTAINER_MARGIN_TOP: '0',
+    WRAPPER_MARGIN_BOTTOM: '0',
+  },
+  MODULE_O: {
+    LIST_PRICE_COLOR: gray['900'],
+  },
+  MODULE_T: {
+    BTN_LIST_COLOR: colorPalette.white,
+    BUTTON_LIST_CONTAINER: `
+      background-color: ${colorPalette.blue.C900};
+      padding: ${spacing.ELEM_SPACING.MED} 0;
+      margin-top: ${spacing.ELEM_SPACING.SM};
+
+      @media ${mediaQuery.medium} {
+        margin-top: ${spacing.ELEM_SPACING.MED};
+      }
+
+      .button-list-wrapper {
+        padding: 0;
+        margin: 0;
+      }
+    `,
+  },
+  TEXT_STYLE_FONT_SIZE: {
+    SPACED_TEXT: FONT_SIZES.fs20,
+    MEDIUM_TEXT: FONT_SIZES.fs20,
+    MEDIUM_TEXT_LARGE_MEDIA_QUERY: FONT_SIZES.fs32,
+  },
+  VENMO_PAYMENT_BUTTON_BORDER_RADIUS: spacing.ELEM_SPACING.LRG,
+  CART_ITEM_COUNT_BACKGROUND_COLOR: orange['900'],
+  FOOTER_NAV_HEADER_BACKGROUND_COLOR: colorPalette.primary.main,
+  PDP_PRICE_COLOR: gray['900'],
+  L2_HOVER: orange[800],
+  L2_BG_COLOR: orange['50'],
+  L2_MOBILE_BG_COLOR: '#fef4e8',
+  EMAIL_SIGNUP_BTN: blue[800],
+  STORE_LOCATOR_BACKGROUND: orange['50'],
+  BORDER_BOTTOM_FOR_EARN_EXTRA_POINTS: orange['800'],
+  PRODUCT_ADD_TO_BAG: {
+    SOCIAL_PROOF_DESKTOP_BOTTOM_PADDING_TOP: '0px',
+    SOCIAL_PROOF_DESKTOP_BOTTOM_MARGIN: '12px 6px 0px',
+    BUTTON_BGCOLOR: colorPalette.blue.C900,
+  },
+  HEADER_TOP_NAV: {
+    HEADER_OPTION_RIGHT: '100px',
+  },
+  COMPLETE_THE_LOOK_STYLE: {
+    COMPLETE_THE_LOOK_NEW_PDP_BORDER: blue[900],
+  },
+  MODULE_Q_COMPLETE_THE_LOOK: {
+    VIEW_LOOK_TEXT_COLOR: colors.WHITE,
+  },
+  SIGNUP_CONFIRM: {
+    CONFIRM_SMILEY_LOGO_WRAPPER_PADDING: '29px 0 28px 0',
+    CONFIRMATION_LABEL_BACKGROUND: orange['800'],
+  },
+  EMAIL_SIGNUP_FORM: {
+    FIELD_CONTAINER_PADDING_TOP: spacing.ELEM_SPACING.XXXL,
+    LOGO_WRAPPER_PADDING: '29px 0 28px 0',
+    TERMS_CONTAINER_MARGIN: '0 auto 20px',
+  },
+  SMS_SIGNUP_FORM: {
+    LOGO_WRAPPER_PADDING: '29px 0 28px 0',
+    TERMS_CONTAINER_MARGIN_TOP: '42px',
+  },
+  SOCIAL_PROOF_MESSAGE: {
+    STYLED_SOCIAL_PROOF_TEXT_BACKGROUND_COLOR: colors.PRIMARY.COLOR2,
+    STYLED_SOCIAL_PROOF_TEXT_BACKGROUND_COLOR_MOBILE: colors.PRIMARY.COLOR2,
+  },
+  HEADER_STYLES: {
+    TITLE_TEXT_FONT_FAMILY: fonts.primary,
+    WELCOME_TEXT_STYLES_FONT_FAMILY: fonts.primary,
+    TITLE_TEXT_STYLES_FONT_FAMILY: fonts.primary,
+  },
+  HEADER_NEW_STYLES: {
+    GET_ADDITIONAL_TITLE_TEXT_STYLES: TCPFonts.nunitoBold,
+    TITLE_TEXT_COUNT: { lineHeight: 14 },
+  },
+  HOME_PAGE: {
+    SET_BACKGROUND: `background-color: ${orange['900']};`,
+  },
+  SMS_SIGNUP_MODAL: {
+    SIGN_UP_MODAL_CONFIRM_VIEW_MARGIN_TOP: spacing.MODULE_SPACING.MED,
+    SIGN_UP_MODAL_CONFIRM_VIEW_MARGIN_BOTTOM: '0px',
+    DESC_TEXT_FONT_SIZE: FONT_SIZES.fs12,
+    DESC_TEXT_WIDTH_HEIGHT: '',
+    SMS_SIGNUP_MODAL_MARGIN_TOP: '30px',
+  },
+  FOOTER: {
+    FOOTER_TOP_CANDIDATE_COLOR: colors.TEXT.DARKERGRAY,
+    FOOTER_TOP_CANDIDATE_A_SOCIAL_LINKS_FLEX_DIRECTION: 'row',
+    FOOTER_TOP_CANDIDATE_A_SOCIAL_LINKS_PADDING: '0px',
+    FOOTER_TOP_CANDIDATE_A_SOCIAL_LINKS_FLEX_DIRECTION_MOBILE: 'row',
+  },
+  COUNTRY_SELECTOR: {
+    DISPLAY: 'flex',
+    COUNTRY_SELECTOR_DISPLAY: '',
+  },
+  ACCESSORY_SELECTED_BORDER_COLOR: colors.BRAND.PRIMARY,
+
+  VENMO_BUTTON_OVERLAY: {
+    VENMO_OVERLAY_BUTTON_BORDER_RADIUS: '21px',
+  },
+  COMBINED_CONFIRM: {
+    CONFIRMATION_LABEL_BACKGROUND: colors.TEXT.DARKERBLUE,
+  },
+  COMBINED_FORM_INTRO: {
+    OFFER_TYPE_LABEL_FONT_SIZE: '25px',
+    OFFER_TYPE_LABEL_BACKGROUND: colorPalette.primary.main,
+  },
+  DROPDOWN_LIST: {
+    DROPDOWN_ACTIVE_CLASS_BACKGROUND_COLOR: orange[50],
+    UL_BORDER_WITH_LAST_ROW: orange[50],
+  },
+  PLCC_OFFER_INTRO: {
+    PLCC_OFFER_TYPE_LABEL_BACKGROUND: colorPalette.primary.main,
+  },
+  SIGNUP_FORM_INTRO: {
+    OFFER_TYPE_LABEL_FONT_SIZE: '32px',
+    OFFER_TYPE_LABEL_BACKGROUND: colorPalette.primary.main,
+  },
+  PICKUP_PRODUCT_FORM_PART: {
+    LIST_PRICE_COLOR: gray[900],
+    ACTUAL_PRICE_COLOR: gray[900],
+  },
+  PICKUP_STORE_MODAL: {
+    ACTUAL_PRICE_COLOR: gray[900],
+    PRODUCT_PRICE_CONTAINER_ACTUAL_PRICE_COLOR: gray[900],
+  },
+  PRODUCT_CUSTOMIZE_FORM_PART: {
+    PRODUCT_DETAILS_CARD_CONTAINER_ACTUAL_PRICE_COLOR: gray[900],
+    PRICE_CONTAINER_ACTUAL_PRICE_COLOR: gray[900],
+  },
+  BOPIS_FILTER_EMPTY_RESULTS: {
+    BOPIS_FILTER_EMPTY_RESULTS_VIEW_BACKGROUND_COLOR: orange[900],
+  },
+  EMPTY_CATEGORY_BANNER: {
+    INTERIM_SOLD_OUT_BACKGROUND_COLOR: orange[900],
+  },
+  ADDED_TO_BAG_ACTIONS: {
+    CHECKOUT_GYM: `border-radius: 24px;`,
+    CHECKOUT: `border-radius: 24px;`,
+  },
+  BAG_PAGE_STYLES: {
+    BORDER_RADIUS: 'border-radius: 25.5px',
+  },
+  MODULE_S_STYLES: {
+    STYLED_LINK_TEXT_COLOR: colors.TEXT.DARK,
+    HEADER_TEXT_MARGIN_BOTTOM: '',
+    COL_IMG_WRAPPER_HEIGHT: '420px',
+    COL_IMG_WRAPPER_HEIGHT_MEDIUM_ONLY: '480px',
+    COL_IMG_WRAPPER_HEIGHT_LARGE: '616px',
+    IMAGE_CONTAINER_HEIGHT: '480px',
+    GET_RIGHT_VALUE: '47px',
+    GET_LEFT_VALUE: '47px',
+    CONTAINER_WIDTH: '272px',
+  },
+  HOME_PAGE_STYLE: {
+    SET_BACKGROUND: orange['900'],
+  },
+  MENU_ITEMS: {
+    PROMO_CONTAINER_BR: '20px',
+  },
+  NAV_MENU_LEVEL_ONE: {
+    L1_TEXT_VIEW_WIDTH: '50%',
+    L1_TEXT_VIEW_TOP: '40%',
+  },
+  FOOTER_TOP_CANDIDATE_SOCIAL_MARGIN: '6px 26px 0px 0px',
+  CODE_PUSH_ANIMATION_STYLES: 'Montserrat',
+  MULTI_PRODUCT_ADD_TO_BAG: blue['900'],
+  USER_ONBOARING_SCREEN_BGCOLOR: colors.WHITE,
+  RECOM_QVMODAL_BUTTON: {
+    BGCOLOR: colors.PRIMARY.DARKBLUE,
+  },
+  KEEP_SHOPPING_TEXT: {
+    COLOR: colors.WHITE,
+  },
+  STICKY_ATB_BUTTON: {
+    COLOR: colors.WHITE,
+    BGCOLOR: blue[900],
+  },
+  DELIVERY_METHOD_PRIMARY_LABEL_COLOR: gray['900'],
+  DELIVERY_METHOD_SECONDARY_LABEL_COLOR: green['500'],
+  DELIVERY_METHOD_BORDER_COLOR: colors.DEFAULT_ACCENT_GYM,
+  HORIZONTAL_PLP: {
+    COLOR: colors.WHITE,
+    BGCOLOR: colorPalette.blue.C900,
+  },
+  PRODUCTS_GRID_ITEM: {
+    BUTTON_BGCOLOR: colorPalette.blue.C900,
+  },
+  BRAND_BASED_BUTTON_HOVER: '#1C2E40',
+  BRAND_BASED_BUTTON_FOCUS: '#2A4760',
+  PDP_ACTIVE_TAB_COLOR: orange[900],
+  TTJ_BUTTON_TEXT_COLOR: gray['400'],
+};
